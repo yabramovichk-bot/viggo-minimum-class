@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Viggo Minimum Class Calculator</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="card">
+
+    <h2>Viggo Minimum Class Calculator</h2>
+
+
+    <!-- USERNAME -->
+
+    <label for="username">
+      Username (with/without @):
+    </label>
+
+    <input
+      type="text"
+      id="username"
+      placeholder="e.g. @deuscythe or deuscythe"
+      autocomplete="off"
+    >
+
+
+    <!-- LAST ACTIVE DAY -->
+
+    <label for="lastActiveDay">
+      Last Active Day (Before Hiatus):
+    </label>
+
+    <select id="lastActiveDay">
+
+      <option value="sabtu">
+        Full Week
+      </option>
+
+      <option value="senin">
+        Monday
+      </option>
+
+      <option value="selasa">
+        Tuesday
+      </option>
+
+      <option value="rabu">
+        Wednesday
+      </option>
+
+      <option value="kamis">
+        Thursday
+      </option>
+
+      <option value="jumat">
+        Friday
+      </option>
+
+      <option value="sabtu">
+        Saturday
+      </option>
+
+    </select>
+
+
+    <!-- BUTTON -->
+
+    <button id="calcBtn">
+      Calculate Minimum Class
+    </button>
+
+
+    <!-- RESULT -->
+
+    <div
+      id="resultBox"
+      class="result-box"
+    >
+
+      <h3 id="resTotal">
+        Target Minimum: -
+      </h3>
+
+      <p
+        id="resStudent"
+        class="student-result"
+      ></p>
+
+      <p
+        id="resDetail"
+        class="detail-result"
+      ></p>
+
+    </div>
+
+
+    <!-- ERROR -->
+
+    <div
+      id="errorBox"
+      class="error-box"
+    ></div>
+
+
+    <!-- FOOTER -->
+
+    <div class="footer-credit">
+      made by Yiorga Kovalenko
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #1a472a;
+
+  padding: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  margin: 0;
+}
+
+
+.card {
+  background:
+    linear-gradient(
+      135deg,
+      #e0e0e0 0%,
+      #ffffff 45%,
+      #b8b8b8 70%,
+      #f5f5f5 100%
+    );
+
+  padding: 30px;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.4),
+    0 0 15px rgba(255, 255, 255, 0.2);
+
+  border: 1px solid #d1d1d1;
+
+  width: 100%;
+  max-width: 420px;
+}
+
+
+h2 {
+  color: #0f2b19;
+
+  margin-top: 0;
+
+  text-align: center;
+
+  font-weight: 700;
+}
+
+
+label {
+  font-weight: 600;
+
+  display: block;
+
+  margin-top: 15px;
+  margin-bottom: 5px;
+
+  color: #1a472a;
+
+  font-size: 14px;
+}
+
+
+select,
+input {
+  font-family: 'Roboto Mono', monospace;
+
+  width: 100%;
+
+  padding: 10px;
+
+  border: 1px solid #9f9f9f;
+
+  border-radius: 6px;
+
+  background-color: rgba(255, 255, 255, 0.9);
+
+  color: #2c3e50;
+
+  font-size: 14px;
+}
+
+
+button {
+  font-family: 'Roboto Mono', monospace;
+
+  width: 100%;
+
+  background-color: #1a472a;
+
+  color: #e0e0e0;
+
+  border: 1px solid #2d5a3c;
+
+  padding: 12px;
+
+  margin-top: 22px;
+
+  border-radius: 6px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  transition: all 0.3s ease;
+}
+
+
+button:hover {
+  background-color: #0f2b19;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 0 10px rgba(26, 71, 42, 0.5);
+}
+
+
+button:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+  box-shadow: none;
+}
+
+
+.result-box {
+  margin-top: 20px;
+
+  padding: 15px;
+
+  background-color:
+    rgba(26, 71, 42, 0.1);
+
+  border-left:
+    5px solid #1a472a;
+
+  border-radius: 4px;
+
+  display: none;
+}
+
+
+.result-box h3 {
+  margin: 0 0 8px 0;
+
+  color: #0f2b19;
+
+  font-size: 15px;
+}
+
+
+.student-result {
+  margin: 0 0 5px 0;
+
+  font-weight: bold;
+
+  color: #1a472a;
+
+  font-size: 12px;
+}
+
+
+.detail-result {
+  margin: 0;
+
+  color: #333;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+.error-box {
+  display: none;
+
+  margin-top: 15px;
+
+  padding: 12px;
+
+  border-radius: 5px;
+
+  background-color: #f8d7da;
+
+  color: #721c24;
+
+  font-size: 12px;
+
+  border-left: 4px solid #721c24;
+}
+
+
+.footer-credit {
+  margin-top: 25px;
+
+  text-align: center;
+
+  font-size: 10px;
+
+  color: #555555;
+}
